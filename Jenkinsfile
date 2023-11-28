@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             steps {
-                sh "docker build -t static-web:${env.APP_BUILD_NUBER} ."
+                sh "docker build -t manngo2013/static-web:${env.APP_BUILD_NUBER} ."
             }
         }
 	stage('Login DockerHUB') {
